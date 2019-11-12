@@ -1,0 +1,9 @@
+{% extends "base.html" %}
+
+{%block content %}
+  Hello!
+  <form action="/api/url" method="post">
+    Create short URL<input type="text" name="url_param" required>
+    <input type="submit" value="Submit">
+  </form>
+{% endblock %}
